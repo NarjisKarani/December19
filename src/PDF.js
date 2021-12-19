@@ -9,8 +9,7 @@ const PDF = (props) => {
     <>
       <div className="Post" ref={ref}>
         <h1>{props.title}</h1>
-        <img src={props.barcode} alt={props.title} />  
-        <Barcode  src={props.barcode} alt={props.title}/>
+        <Barcode  value={props.barcode}/>
         <p>{props.content}</p>
       </div>
       <Pdf targetRef={ref} filename="new.pdf">

@@ -46,9 +46,7 @@ class Post extends Component {
                                                 </div>
                                                 <div className="form-group">
                                                     <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-user bigicon"></i></span>
-                                                    <input onChange={this.onChange('barcode')} name="barcode" type="text" placeholder="image url" className="form-control" />
-                                                    {/* <input onChange={this.onChange('barcode')} name="barcode" type="text" placeholder="barcode value" className="form-control" /> */}
-                                                    {/* <Barcode onChange={this.onChange('barcode')} name="barcode" value="xyz" className="form-control" /> */}
+                                                    <input onChange={this.onChange('barcode')} name="barcode" type="text" placeholder="Barcode Value" className="form-control" />
                                                 </div>
                                                 <div className="form-group">
                                                     <span className="col-md-1 col-md-offset-2 text-center"><i className="fa fa-pencil-square-o bigicon"></i></span>
