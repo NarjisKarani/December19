@@ -1,5 +1,6 @@
 import React from 'react';
 import Pdf from "react-to-pdf";
+const Barcode = require('react-barcode');
 
 const ref = React.createRef();
 
@@ -8,7 +9,8 @@ const PDF = (props) => {
     <>
       <div className="Post" ref={ref}>
         <h1>{props.title}</h1>
-        <svg src={props.barcode} alt={props.title} />  
+        <img src={props.barcode} alt={props.title} />  
+        <Barcode  src={props.barcode} alt={props.title}/>
         <p>{props.content}</p>
       </div>
       <Pdf targetRef={ref} filename="new.pdf">
