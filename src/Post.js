@@ -16,7 +16,7 @@ class Post extends Component {
         });
     }
 
-    sunmitPost = (e) => {
+    submitPost = (e) => {
         
         if(!this.state.title || !this.state.content){
             alert('Required!');
@@ -54,7 +54,7 @@ class Post extends Component {
                                                     <textarea onChange={this.onChange('content')} className="form-control" name="content" placeholder="Enter your text here" rows="7"></textarea>
                                                 </div>
                                                 <div className="form-group">
-                                                    <button type="button" onClick={this.sunmitPost} className="btn btn-primary btn-lg">Submit</button>
+                                                    <button type="button" onClick={this.submitPost} className="btn btn-primary btn-lg">Submit</button>
                                                 </div>
                                             </fieldset>
                                         </form>
