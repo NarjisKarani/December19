@@ -19,7 +19,7 @@ class Post extends Component {
     sunmitPost = (e) => {
         
         if(!this.state.title || !this.state.content){
-            alert('All fields are required!');
+            alert('Required!');
             e.preventDefault();
         }else{
             this.setState({
